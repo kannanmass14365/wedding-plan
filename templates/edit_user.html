@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Edit User</title>
+</head>
+<body>
+
+    <h2>Edit Username</h2>
+
+    <form method="POST">
+        <label>Username:</label>
+
+        <input
+            type="text"
+            name="username"
+            value="{{ user.username }}"
+            required
+        >
+
+        <button type="submit">Save Changes</button>
+    </form>
+
+    <a href="{{ url_for('show_users') }}">Cancel</a>
+
+</body>
+</html>

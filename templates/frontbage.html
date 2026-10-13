@@ -1,0 +1,73 @@
+!D<OCTYPE html>
+<html>
+<head>
+    <title>WeddingConnect</title>
+    <link rel="stylesheet"
+      href="{{ url_for('static', filename='front.css') }}">
+</head>
+
+<body>
+
+    <header>
+        <h1>WeddingConnect  </h1>
+
+        <nav>
+            <a href="#">Home</a>
+            <a href="#about">About</a>
+            <a href="#services" >Services</a>
+            <a href="{{ url_for('register') }}">Register</a>
+        </nav>
+    </header>
+    <section class="hero">
+
+    <div class="hero-content">
+        <h2>Plan Your Perfect Wedding</h2>
+
+        <p>
+            Make your special day beautiful and memorable with WeddingConnect.
+        </p>
+
+        <button >Get Started</button>
+
+    </div>
+
+</section>
+<section class="about" id="about">
+
+    <h2>About WeddingConnect</h2>
+
+    <p>
+        WeddingConnect helps you plan and organize your special wedding day
+        easily and beautifully.
+    </p>
+
+    <p>
+        We provide wedding invitation and event services
+        to make your special day memorable.
+    </p>
+
+</section>
+<section class="services" id="services">
+
+    <h2>Our Services</h2>
+
+    <div class="service-container">
+
+        <div class="service-card">
+            <h3>Wedding Invitations</h3>
+            <p>Beautiful and customized wedding invitation designs.</p>
+        </div>
+
+        <div class="service-card">
+            <h3>Event Planning</h3>
+            <p>Plan and organize your wedding events with ease.</p>
+        </div>
+
+        <div class="service-card">
+            <h3>Custom Designs</h3>
+            <p>Create unique designs according to your requirements.</p>
+        </div>
+
+    </div>
+</body>
+</html>
